@@ -21,4 +21,17 @@ public class MainActivity extends AppCompatActivity {
         Intent i = new Intent(this, List_view.class);
         startActivity(i);
     }
+    public void irAMemoria(View view){
+        Intent i = new Intent(this, memoria.class);
+        startActivity(i);
+    }
+    public void irAMemoriaExterna(View view){
+        Intent i = new Intent(this, memoriaExterna.class);
+        startActivity(i);
+    }
+
+    public void irAAlumnos(View view){
+        Intent i = new Intent(this, alumnos.class);
+        startActivity(i);
+    }
 }

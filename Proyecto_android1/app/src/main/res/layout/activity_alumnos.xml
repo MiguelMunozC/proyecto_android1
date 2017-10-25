@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.blanc.proyecto_android1.alumnos">
+
+    <EditText
+        android:id="@+id/etTelefono"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="54dp"
+        android:layout_marginTop="7dp"
+        android:ems="10"
+        android:hint="Ingrese Teléfono"
+        android:inputType="textPersonName"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etNombre" />
+
+    <EditText
+        android:id="@+id/etNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="54dp"
+        android:layout_marginTop="7dp"
+        android:ems="10"
+        android:hint="Ingrese Nombre"
+        android:inputType="textPersonName"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etRut" />
+
+    <EditText
+        android:id="@+id/etRut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="54dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Ingrese Rut"
+        android:inputType="textPersonName"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnModificarAlumno"
+        android:layout_width="214dp"
+        android:layout_height="44dp"
+        android:layout_marginLeft="53dp"
+        android:layout_marginTop="0dp"
+        android:backgroundTint="@android:color/holo_orange_dark"
+        android:onClick="modificarAlumno"
+        android:text="Modificar alumno"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button13" />
+
+    <Button
+        android:id="@+id/button13"
+        android:layout_width="214dp"
+        android:layout_height="44dp"
+        android:layout_marginLeft="53dp"
+        android:layout_marginTop="0dp"
+        android:backgroundTint="@android:color/holo_red_dark"
+        android:onClick="eliminarAlumno"
+        android:text="Eliminar por rut"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button12" />
+
+    <Button
+        android:id="@+id/button12"
+        android:layout_width="214dp"
+        android:layout_height="44dp"
+        android:layout_marginLeft="53dp"
+        android:layout_marginTop="0dp"
+        android:backgroundTint="@android:color/holo_orange_light"
+        android:onClick="consultarPorNombre"
+        android:text="Consultar por nombre"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button11" />
+
+    <Button
+        android:id="@+id/button11"
+        android:layout_width="214dp"
+        android:layout_height="44dp"
+        android:layout_marginLeft="53dp"
+        android:layout_marginTop="0dp"
+        android:backgroundTint="@android:color/holo_orange_light"
+        android:onClick="consultarPorRut"
+        android:text="Consultar por rut"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button10" />
+
+    <Button
+        android:id="@+id/button10"
+        android:layout_width="214dp"
+        android:layout_height="44dp"
+        android:layout_marginLeft="53dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@android:color/holo_green_dark"
+        android:onClick="ingresar"
+        android:text="Ingresar"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etTelefono" />
+
+    <Button
+        android:id="@+id/btnVolver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="53dp"
+        android:background="@color/colorPrimary"
+        android:onClick="volver"
+        android:text="Volver"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <Button
+        android:id="@+id/button15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="7dp"
+        android:layout_marginLeft="54dp"
+        android:background="@android:color/holo_blue_bright"
+        android:onClick="limpiar"
+        android:text="Limpiar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
